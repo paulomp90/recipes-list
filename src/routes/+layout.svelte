@@ -1,20 +1,34 @@
 <script>
-	import { onMount } from 'svelte';
-	import { auth } from '../lib/firebase';
+    import { onMount } from 'svelte';
+    import { auth } from '../lib/firebase';
+    import { authStore } from '../store/store.js';
 
-	onMount(() => {
-		console.log('Mounting');
-		const unsubscribe = auth.onAuthStateChanged(async (user) => {
-			console.log('Loggedin User:', user);
+    onMount(() => {
+        const unsubscribe = auth.onAuthStateChanged(async (user) => {
+            const currentPath = window.location.pathname;
 
-			if (!user) {
-				return;
-			}
-		});
-		return unsubscribe;
-	});
+            if (!user && !currentPath.includes('login')) {
+                window.location.href = '/login';
+                return;
+            }
+
+            if (user && currentPath.includes('login')) {
+                window.location.href = '/';
+                return;
+            }
+
+            authStore.update((curr) => {
+                return {
+                    ...curr,
+                    user,
+                    loading: false
+                };
+            });
+        });
+        return unsubscribe;
+    });
 </script>
 
 <div>
-	<slot />
+    <slot />
 </div>
