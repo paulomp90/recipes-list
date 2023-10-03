@@ -3,6 +3,9 @@
     import { auth } from '../lib/firebase';
     import { authStore } from '../store/store.js';
     import Nav from '../components/Nav.svelte';
+    import { signOut } from 'firebase/auth';
+
+    $: user = $authStore.user;
 
     onMount(() => {
         const unsubscribe = auth.onAuthStateChanged(async (user) => {
@@ -28,9 +31,16 @@
         });
         return unsubscribe;
     });
+
+    const handleLogout = () => {
+        console.log('clicked!');
+        signOut(auth);
+    };
 </script>
 
-<Nav />
+{#if user}
+    <Nav on:click={handleLogout} />
+{/if}
 <main class="container mx-auto px-4 pt-8 pb-4">
     <slot />
 </main>

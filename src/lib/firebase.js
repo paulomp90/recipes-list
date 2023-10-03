@@ -2,10 +2,10 @@
 import { deleteApp, initializeApp, getApp, getApps } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import { getAuth } from 'firebase/auth';
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -30,5 +30,6 @@ if (!getApps().length) {
 }
 
 export const auth = getAuth(firebaseApp);
+export const db = getFirestore(firebaseApp);
 
 // const analytics = getAnalytics(firebaseApp);
