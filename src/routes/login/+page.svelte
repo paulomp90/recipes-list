@@ -5,6 +5,7 @@
     import { authStore } from '../../store/store.js';
     import { goto } from '$app/navigation';
     import { onDestroy } from 'svelte';
+    // import { createUser } from '../../api/users.js';
 
     async function loginWithGoogle() {
         try {

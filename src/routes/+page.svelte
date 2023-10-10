@@ -13,4 +13,6 @@
     <h1>{data.post.title}</h1>
 
     <h1 class="text-3xl font-bold underline text-amber-700">Hello world!</h1>
+
+    <button class="btn btn-primary">Create</button>
 {/if}

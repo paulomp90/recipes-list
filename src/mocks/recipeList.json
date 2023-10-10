@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Esparguete à bolonhesa",
+        "descriptions": "Esta receita, original da cidade italiana de Bolonha, é uma das pastas italianas mais apreciadas em todo o mundo. Simples e rápida, só precisa de 30 minutos para a preparar. Junte a família e leve-a à mesa.",
+        "image": "https://www.pingodoce.pt/wp-content/uploads/2016/10/esparguetebolonhesa.jpg",
+        "ingredients": [
+            {
+                "name": "esparguete",
+                "quantity": 400,
+                "type": "grams"
+            },
+            {
+                "name": "alho",
+                "quantity": 2,
+                "type": "unidades"
+            },
+            {
+                "name": "azeite",
+                "quantity": 1,
+                "type": "colher de sopa"
+            }
+        ],
+        "steps": [
+            {
+                "number": 1,
+                "description":"Num tacho, coza o esparguete em água a ferver durante 8 minutos."
+            },
+            {
+                "number": 2,
+                "description":"Retire do lume, escorra e reserve."
+            },
+            {
+                "number": 3,
+                "description":"Pique o alho, o talo de aipo e a cebola."
+            }
+        ]
+    }
+]
+
+
