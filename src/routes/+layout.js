@@ -1,18 +1,18 @@
-import { createSupabaseLoadClient } from '@supabase/auth-helpers-sveltekit'
+import { createSupabaseLoadClient } from '@supabase/auth-helpers-sveltekit';
 
 export async function load({ data, depends }) {
-    depends('supabase:auth')
+    depends('supabase:auth');
 
     const supabase = createSupabaseLoadClient({
         supabaseUrl: data.supabaseUrl,
         supabaseKey: data.supabaseKey,
         event: { fetch },
-        serverSession: data.session,
-    })
+        serverSession: data.session
+    });
 
     const {
-        data: { session },
-    } = await supabase.auth.getSession()
+        data: { session }
+    } = await supabase.auth.getSession();
 
-    return { theme: data.theme, supabase, session }
+    return { theme: data.theme, supabase, session };
 }
