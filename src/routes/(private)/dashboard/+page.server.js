@@ -1,7 +1,10 @@
-export async function load({ locals: { supabase } }) {
-    const { data } = await supabase.from('recipe').select();
+export async function load({ locals }) {
+    const session = await locals.getSession();
 
-    console.log(data);
+    const { data } = await locals.supabase
+        .from('recipe')
+        .select(`name,image,id, users (*)`)
+        .eq(`users.id`, session.user.id);
 
     return {
         recipes: data,

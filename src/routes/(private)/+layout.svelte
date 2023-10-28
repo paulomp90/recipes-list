@@ -6,5 +6,7 @@
 </script>
 
 <Shell {user}>
-    <slot />
+    <main class="px-16 py-10">
+        <slot />
+    </main>
 </Shell>

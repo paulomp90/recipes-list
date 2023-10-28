@@ -1,19 +1,9 @@
 <script>
-    export let data;
+    import List from '$lib/components/List/List.svelte';
 
-    // let loadedData = [];
-    //
-    console.log(data);
-    // async function loadData() {
-    //     const { data: result } = await data.supabase.from('recipe').select('*').limit(20);
-    //
-    //     console.log('result: ', result);
-    //     loadedData = result;
-    // }
-    //
-    // $: if (data.session) {
-    //     loadData();
-    // }
+    export let data;
 </script>
 
-<!--<pre>{JSON.stringify(loadedData, null, 2)}</pre>-->
+{#if data.recipes}
+    <List list={data.recipes} />
+{/if}
