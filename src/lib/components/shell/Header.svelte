@@ -11,21 +11,21 @@
     export let fullWidth = false;
 </script>
 
-<header class="w-full flex flex-col border-b z-50">
+<header class="z-50 flex w-full flex-col border-b">
     <Loader visible={showLoader} />
 
     <div class="flex flex-col justify-center p-2 px-4">
         <div
-            class={'flex flex-row items-center justify-between w-full ' +
-                (fullWidth ? '' : 'max-w-screen-xl mx-auto')}
+            class={'flex w-full flex-row items-center justify-between ' +
+                (fullWidth ? '' : 'mx-auto max-w-screen-xl')}
         >
-            <div class="flex flex-row items-center flex-1 gap-2">
+            <div class="flex flex-1 flex-row items-center gap-2">
                 <Logo />
 
                 {#if showSidebar}
                     <div class="flex-none lg:hidden">
-                        <label for="leftSidebar" class="btn btn-square btn-sm btn-ghost p-1">
-                            <Menu class="w-full h-full" />
+                        <label for="leftSidebar" class="btn btn-square btn-ghost btn-sm p-1">
+                            <Menu class="h-full w-full" />
                         </label>
                     </div>
                 {/if}
@@ -40,7 +40,7 @@
                     <div class="dropdown dropdown-end ml-6" data-sveltekit-preload-data="off">
                         <button
                             tabIndex={0}
-                            class="cursor-pointer flex flex-row gap-2 items-center"
+                            class="flex cursor-pointer flex-row items-center gap-2"
                         >
                             <div class="avatar">
                                 <div class="w-12 rounded-full border-2">
@@ -51,26 +51,26 @@
 
                         <div
                             tabIndex={0}
-                            class="dropdown-content border rounded-lg w-64 p-2 shadow mt-4"
+                            class="dropdown-content mt-4 w-64 rounded-lg border p-2 shadow"
                         >
                             <div class="flex flex-col gap-2 text-xl">
                                 <a
                                     href="/dashboard"
-                                    class="p-2 flex flex-row items-center gap-2 rounded-lg hover:bg-base-200"
+                                    class="flex flex-row items-center gap-2 rounded-lg p-2 hover:bg-base-200"
                                 >
                                     <LayoutDashboard />
                                     Dashboard
                                 </a>
                                 <a
                                     href="/account"
-                                    class="p-2 flex flex-row items-center gap-2 rounded-lg hover:bg-base-200"
+                                    class="flex flex-row items-center gap-2 rounded-lg p-2 hover:bg-base-200"
                                 >
                                     <UserCircle />
                                     Account
                                 </a>
                                 <a
                                     href="/auth/logout"
-                                    class="w-full p-2 flex flex-row items-center gap-2 rounded-lg hover:bg-base-200 text-error"
+                                    class="flex w-full flex-row items-center gap-2 rounded-lg p-2 text-error hover:bg-base-200"
                                 >
                                     <LogOut />
                                     Logout

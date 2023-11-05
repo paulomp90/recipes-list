@@ -7,15 +7,15 @@
     type="submit"
     name="provider"
     value={provider}
-    class="w-full h-full grid place-items-center bg-white"
+    class="grid h-full w-full place-items-center bg-white"
     disabled={busy}
 >
     {#if provider === 'google'}
         <div
-            class="px-4 py-2 w-full border flex justify-center gap-2 rounded-lg hover:bg-base-100 hover:shadow transition duration-150"
+            class="flex w-full justify-center gap-2 rounded-lg border px-4 py-2 transition duration-150 hover:bg-base-100 hover:shadow"
         >
             <img
-                class="w-6 h-6"
+                class="h-6 w-6"
                 src="https://www.svgrepo.com/show/475656/google-color.svg"
                 loading="lazy"
                 alt="google logo"
@@ -24,7 +24,7 @@
         </div>
     {:else}
         <h1
-            class="px-4 py-2 w-full border flex justify-center gap-2 rounded-lg hover:bg-base-100 hover:shadow transition duration-150 capitalize"
+            class="flex w-full justify-center gap-2 rounded-lg border px-4 py-2 capitalize transition duration-150 hover:bg-base-100 hover:shadow"
         >
             Login with {provider}
         </h1>

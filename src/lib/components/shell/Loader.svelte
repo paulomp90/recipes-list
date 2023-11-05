@@ -19,7 +19,7 @@
 </script>
 
 <div
-    class={'sticky top-0 z-50 w-full min-h-[4px] bg-transparent ' +
+    class={'sticky top-0 z-50 min-h-[4px] w-full bg-transparent ' +
         (animate ? 'animated-gradient' : '')}
 />
 

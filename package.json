@@ -6,14 +6,13 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "prettier --plugin-search-dir . --check . && eslint .",
-    "format": "prettier --plugin-search-dir . --write ."
+    "pr": "prettier --check --plugin prettier-plugin-svelte --plugin prettier-plugin-tailwindcss './src/**/*.{js,svelte,html,ts}'",
+    "lint": "eslint './src/**/*.{js,ts,svelte}'",
+    "format": "prettier --write --plugin=prettier-plugin-svelte --plugin=prettier-plugin-tailwindcss ."
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^2.1.0",
     "@sveltejs/kit": "^1.25.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.2",
-    "@typescript-eslint/parser": "^6.7.2",
     "autoprefixer": "^10.4.16",
     "daisyui": "^3.9.4",
     "eslint": "^8.49.0",

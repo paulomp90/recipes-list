@@ -12,8 +12,8 @@ export const actions = {
     default: async ({ request }) => {
         const formData = await request.formData();
         const name = formData.get('name');
-        // Process the form data and perform actions
-        console.log(name);
+
+        console.log(formData);
 
         return { success: true };
     }

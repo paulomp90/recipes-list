@@ -24,7 +24,7 @@
 
 <Meta />
 
-<div class="h-full flex flex-col flex-grow" data-theme={theme}>
+<div class="flex h-full flex-grow flex-col" data-theme={theme}>
     <slot />
 </div>
 

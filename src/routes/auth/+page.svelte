@@ -9,9 +9,9 @@
     let busy = false;
 </script>
 
-<div class="w-full min-h-[100dvh] grid place-items-center md:bg-base-200">
+<div class="grid min-h-[100dvh] w-full place-items-center md:bg-base-200">
     <div
-        class="flex flex-col items-center w-full md:max-w-lg gap-4 bg-base-100 p-4 md:p-6 md:border md:rounded-lg md:shadow-md"
+        class="flex w-full flex-col items-center gap-4 bg-base-100 p-4 md:max-w-lg md:rounded-lg md:border md:p-6 md:shadow-md"
     >
         <!--        <h1 class="text-2xl font-bold">Login / SignUp</h1>-->
 
@@ -53,7 +53,7 @@
                 use:enhance
                 method="post"
                 action="/auth/?/oauthLogin"
-                class="w-full flex flex-col items-center gap-3"
+                class="flex w-full flex-col items-center gap-3"
             >
                 <p>Login with your Google account.</p>
                 {#each providers as provider}

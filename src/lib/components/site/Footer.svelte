@@ -3,12 +3,12 @@
 </script>
 
 <footer
-    class="p-12 w-full bg-base-200 text-center flex flex-col md:flex-row justify-between gap-4 items-center bottom-0"
+    class="bottom-0 flex w-full flex-col items-center justify-between gap-4 bg-base-200 p-12 text-center md:flex-row"
     class:sticky
 >
-    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <div class="container mx-auto flex flex-col items-center px-5 py-8 sm:flex-row">
         <a
-            class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+            class="title-font flex items-center justify-center font-medium text-gray-900 md:justify-start"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                class="h-10 w-10 rounded-full bg-indigo-500 p-2 text-white"
                 viewBox="0 0 24 24"
             >
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
@@ -25,24 +25,24 @@
             <span class="ml-3 text-xl">Tailblocks</span>
         </a>
         <p
-            class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+            class="mt-4 text-sm text-gray-500 sm:ml-4 sm:mt-0 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:pl-4"
         >
             © 2020 Tailblocks —
             <a
                 href="https://twitter.com/knyttneve"
-                class="text-gray-600 ml-1"
+                class="ml-1 text-gray-600"
                 rel="noopener noreferrer"
                 target="_blank">@knyttneve</a
             >
         </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <span class="mt-4 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
             <a class="text-gray-500">
                 <svg
                     fill="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-5 h-5"
+                    class="h-5 w-5"
                     viewBox="0 0 24 24"
                 >
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
@@ -54,7 +54,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-5 h-5"
+                    class="h-5 w-5"
                     viewBox="0 0 24 24"
                 >
                     <path
@@ -69,7 +69,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-5 h-5"
+                    class="h-5 w-5"
                     viewBox="0 0 24 24"
                 >
                     <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -83,7 +83,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="0"
-                    class="w-5 h-5"
+                    class="h-5 w-5"
                     viewBox="0 0 24 24"
                 >
                     <path

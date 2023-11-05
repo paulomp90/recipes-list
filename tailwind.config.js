@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config}*/
 const config = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
-	theme: {
-		extend: {}
-	},
-	plugins: [require('daisyui')],
-	daisyui: {
-		themes: ['lemonade']
-	}
+    content: ['./src/**/*.{html,js,svelte,ts}'],
+    theme: {
+        extend: {}
+    },
+    plugins: [require('daisyui')],
+    daisyui: {
+        themes: ['lemonade']
+    }
 };
 
 module.exports = config;

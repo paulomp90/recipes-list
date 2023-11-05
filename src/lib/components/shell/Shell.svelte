@@ -6,7 +6,7 @@
     export let user;
 </script>
 
-<div class="flex flex-col w-full h-screen overflow-hidden">
+<div class="flex h-screen w-full flex-col overflow-hidden">
     {#if $$slots.sidebar}
         <Header showLoader showSidebar fullWidth {user}>
             <svelte:fragment slot="lead">
@@ -22,11 +22,11 @@
             <input id={sidebarElemId} type="checkbox" class="drawer-toggle" />
 
             <div
-                class="drawer-content flex flex-col items-center justify-center h-[92vh] overflow-y-scroll"
+                class="drawer-content flex h-[92vh] flex-col items-center justify-center overflow-y-scroll"
             >
                 <!-- content div -->
-                <div class="flex flex-col flex-grow gap-2 w-full h-full p-4">
-                    <div class="w-full flex flex-col gap-2 max-w-screen-xl mx-auto">
+                <div class="flex h-full w-full flex-grow flex-col gap-2 p-4">
+                    <div class="mx-auto flex w-full max-w-screen-xl flex-col gap-2">
                         <slot />
                     </div>
                 </div>
@@ -34,14 +34,14 @@
 
             <div class="drawer-side z-50">
                 <label for={sidebarElemId} class="drawer-overlay" />
-                <div class="menu p-0 w-72 h-full text-base-content border-r bg-base-300">
+                <div class="menu h-full w-72 border-r bg-base-300 p-0 text-base-content">
                     <slot name="sidebar" />
                 </div>
             </div>
         </div>
     {:else}
         <Header showLoader fullWidth {user} />
-        <div class="w-full h-full overflow-y-auto p-2 px-4 lg:p-4">
+        <div class="h-full w-full overflow-y-auto p-2 px-4 lg:p-4">
             <slot />
         </div>
     {/if}
