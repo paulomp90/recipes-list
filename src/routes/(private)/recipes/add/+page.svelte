@@ -4,7 +4,7 @@
     import Input from '$lib/components/input.svelte';
     import InputFile from '$lib/components/input-file.svelte';
     import TextArea from '$lib/components/textarea.svelte';
-    import Steps from '$lib/components/steps/steps.svelte';
+    import Steps from '$lib/components/steps/Steps.svelte';
     export let data;
 </script>
 

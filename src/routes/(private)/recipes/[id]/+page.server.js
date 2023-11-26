@@ -1,11 +1,14 @@
 export async function load({ locals, params }) {
     const { data } = await locals.supabase
         .from('recipe')
-        .select('name, description, source, image, step, user (first_name, last_name)')
+        .select(
+            'name, description, source, image, step, user (first_name, last_name), recipe_ingredient (quantity, ingredient (name))'
+        )
         .eq(`id`, params.id)
         .single();
 
     let fullName = '';
+
     if (data.user && data.user.first_name && data.user.last_name) {
         fullName = `${data.user.first_name} ${data.user.last_name}`;
     }
