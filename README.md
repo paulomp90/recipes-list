@@ -1,38 +1,29 @@
-# create-svelte
+This project aims to create a recipe management app for personal use, and as a bonus be able to learn svelte framework
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- [SvelteKit](https://kit.svelte.dev/)
+- Database: [Supabase](https://supabase.com/)
+- Theming: [DaisyUI](https://daisyui.com/) and [TailwindCSS](https://tailwindcss.com/)
+- Icons: [Lucide](https://lucide.dev/)
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Create a Supabase account [here](https://supabase.com/)
+2. Create `.env` in the root of the project with the following variables
+
+```
+VITE_PUBLIC_SUPABASE_URL=
+VITE_PUBLIC_SUPABASE_ANON_KEY=
+VITE_ADMIN_EMAIL=
+```
+
+3. Then proceed to the regular commands
 
 ```bash
-npm run dev
+# Install packages
+yarn
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+yarn dev
 ```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+**NOTE**: This project was created using [Sukit](https://github.com/spy16/sukit)
