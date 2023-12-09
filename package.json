@@ -11,29 +11,29 @@
     "format": "prettier --write --plugin=prettier-plugin-svelte --plugin=prettier-plugin-tailwindcss ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^2.1.0",
-    "@sveltejs/kit": "^1.25.0",
-    "autoprefixer": "^10.4.16",
-    "daisyui": "^3.9.4",
-    "eslint": "^8.49.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-svelte": "^2.33.2",
-    "postcss": "^8.4.30",
-    "postcss-load-config": "^4.0.1",
-    "prettier": "^3.0.3",
-    "prettier-plugin-svelte": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.6",
-    "svelte": "^4.2.1",
-    "svelte-check": "^3.5.2",
-    "svelte-preprocess": "^5.0.4",
-    "tailwindcss": "^3.3.3",
-    "vite": "^4.4.9"
+    "@sveltejs/adapter-auto": "2.1.1",
+    "@sveltejs/kit": "1.27.7",
+    "autoprefixer": "10.4.16",
+    "daisyui": "4.4.19",
+    "eslint": "8.55.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-svelte": "2.35.1",
+    "postcss": "8.4.32",
+    "postcss-load-config": "4.0.2",
+    "prettier": "3.1.0",
+    "prettier-plugin-svelte": "3.1.2",
+    "prettier-plugin-tailwindcss": "0.5.9",
+    "svelte": "4.2.8",
+    "svelte-check": "3.6.2",
+    "svelte-preprocess": "5.1.1",
+    "tailwindcss": "3.3.6",
+    "vite": "4.5.1"
   },
   "type": "module",
   "dependencies": {
-    "@supabase/auth-helpers-sveltekit": "^0.10.3",
-    "@supabase/supabase-js": "^2.36.0",
+    "@supabase/auth-helpers-sveltekit": "0.10.7",
+    "@supabase/supabase-js": "2.39.0",
     "lucide-svelte": "^0.285.0",
-    "svelte-french-toast": "^1.2.0"
+    "svelte-french-toast": "1.2.0"
   }
 }
