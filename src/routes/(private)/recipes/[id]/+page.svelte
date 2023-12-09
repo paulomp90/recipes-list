@@ -9,13 +9,9 @@
         name: elem.ingredient.name,
         quantity: elem.quantity
     }));
-
-    console.log(recipe);
 </script>
 
 <h3>{recipe.description}</h3>
-
-<!--<pre>{JSON.stringify(recipe, null, 2)}</pre>-->
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
     <RecipeInformation title={recipe.name} author={recipe.user_uid} source={recipe.source} />
