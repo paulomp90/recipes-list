@@ -6,7 +6,11 @@
 </script>
 
 <div class="pb-4">
-    <a class="flex items-center rounded-lg shadow hover:shadow-lg" href={`../recipes/${id}`}>
+    <a
+        role="button"
+        class="flex items-center rounded-lg shadow hover:bg-green-50 hover:shadow-lg focus:shadow-lg"
+        href={`../recipes/${id}`}
+    >
         <img
             alt={`Image of the ${name} recipe`}
             class="mr-4 aspect-auto max-h-40 w-40 rounded-lg"
@@ -17,4 +21,5 @@
             <p class="text-sm text-slate-400">{author}</p>
         </div>
     </a>
+    <div class="divider" />
 </div>
