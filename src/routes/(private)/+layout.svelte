@@ -1,12 +1,12 @@
 <script>
-    import Shell from '$lib/components/shell/Shell.svelte';
+    import Header from '$lib/components/Header/Header.svelte';
 
     export let data;
     $: ({ user } = data);
 </script>
 
-<Shell {user}>
+<Header {user}>
     <main class="px-16 py-10">
         <slot />
     </main>
-</Shell>
+</Header>

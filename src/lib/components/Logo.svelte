@@ -1,5 +1,7 @@
-<script lang="ts">
-    export let href = '/';
+<script>
+    import { HOME_PATH } from '$lib/constants.js';
+
+    export let href = HOME_PATH;
 </script>
 
 <a {href} class="flex flex-row items-center gap-1">

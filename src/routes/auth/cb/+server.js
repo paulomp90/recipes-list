@@ -9,5 +9,5 @@ export const GET = async ({ url, locals: { supabase } }) => {
         console.warn('no code in redirect');
     }
 
-    throw redirect(303, '/dashboard');
+    throw redirect(303, '/recipes');
 };

@@ -1,3 +1,9 @@
+<script>
+    import { HOME_PATH } from '$lib/constants.js';
+
+    export let href = HOME_PATH;
+</script>
+
 <div class="mx-auto flex w-full max-w-screen-xl flex-col items-center py-24 md:flex-row">
     <div
         class="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24"
@@ -13,7 +19,7 @@
             and gastronomic inspiration.
         </p>
         <div class="flex justify-center">
-            <a href="/dashboard" class="btn btn-primary">Get Started</a>
+            <a {href} class="btn btn-primary">Get Started</a>
         </div>
     </div>
     <div class="w-5/6 md:w-1/2 lg:w-full lg:max-w-lg">
