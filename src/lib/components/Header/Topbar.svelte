@@ -10,7 +10,7 @@
     export let user;
 </script>
 
-<nav class="navbar border-b bg-base-100">
+<nav class="navbar absolute border-b bg-base-100">
     <div class="flex-1">
         <Logo />
     </div>

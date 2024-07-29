@@ -5,8 +5,8 @@
     $: ({ user } = data);
 </script>
 
-<Header {user}>
-    <main class="px-16 py-10">
-        <slot />
-    </main>
-</Header>
+<Header {user} />
+<div class="pt-[67px]" />
+<main class="container mx-auto h-[calc(100vh-67px)] py-10">
+    <slot />
+</main>

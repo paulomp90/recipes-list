@@ -1,12 +1,11 @@
 <script>
-    import ListItem from '$lib/components/List/ListItem.svelte';
     import Card from '$lib/components/UI/Card.svelte';
 
     export let list = [];
 </script>
 
 {#if list}
-    <div class="grid grid-cols-3 gap-10">
+    <div class="grid auto-cols-max grid-flow-col gap-8">
         {#each list as item}
             <Card id={item.id} name={item.name} author={item.author} image={item.image} />
         {/each}
